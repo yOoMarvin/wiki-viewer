@@ -22,12 +22,12 @@
   <body>
 
     <div class="container text-center">
-      <h1>wikipedia viewer</h1>
+      <h1 onClick="window.location.reload()">wikipedia viewer</h1>
       <p id="random-text">give me some <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">random</a> stuff!</p>
       <div class="col-md-4 col-md-offset-4 input-group">
         <input class="form-control" type="text" id="search-text" placeholder="... or">
         <span class="input-group-btn">
-          <button type="button" class="btn btn-danger">... search</button>
+          <button type="button" class="btn btn-danger" onclick="search()">... search</button>
         </span>
       </div>
     </div>
