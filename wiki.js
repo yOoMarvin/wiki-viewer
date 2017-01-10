@@ -9,7 +9,6 @@ function search() {
     $.ajax({
         url: api + title + cb,
 
-        // The name of the callback parameter, as specified by the YQL service
         jsonp: "callback",
 
         // Tell jQuery we're expecting JSONP
@@ -17,8 +16,17 @@ function search() {
 
         // Work with the response
         success: function(data) {
-            var results
-            console.log(data.query.pages); // server response
+            //server response
+            var results = data.query.pages;
+            console.log(results);
+
+            $.each( results, function( key, value ) {
+              $('.container').append('<a href='+page+value.pageid+
+              '<div class=result id='+ key +'>'+
+                '<h4 class=result-title>' + value.title +'</h4>'+
+                '<p class=result-extract>' + value.extract +'</p>'+
+              '</div> </a>');
+            });
         }
     });
 }
