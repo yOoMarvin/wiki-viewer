@@ -28,6 +28,22 @@ a:hover{
 }
 
 /*
+  Footer Style
+*/
+.footer{
+  font-size: 18px;
+  color: #ECF0F1;
+  margin-left: 20px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.footer a {
+  color: #ECF0F1;
+}
+
+/*
   Style for result elements
 */
 
