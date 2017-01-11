@@ -24,7 +24,7 @@ function search() {
             console.log(results);
             //for each result add a new node
             $.each( results, function( key, value ) {
-              $('.container').append('<a href='+page+value.pageid+
+              $('.container').append('<a href='+page+value.pageid+ ' target=_blank>' + 
               '<div class=result id='+ key +'>'+
                 '<h4 class=result-title>' + value.title +'</h4>'+
                 '<p class=result-extract>' + value.extract +'</p>'+

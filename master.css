@@ -15,6 +15,7 @@ a{
 
 a:hover{
   color: #B23B2E;
+  text-decoration: none;
 }
 
 .input-group{
@@ -24,4 +25,18 @@ a:hover{
 
 #random-text{
   margin-top: 60px;
+}
+
+/*
+  Style for result elements
+*/
+
+.result {
+  background: #ECF0F1;
+  color: #2C3E50;
+  text-align: left;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
 }
